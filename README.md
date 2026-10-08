@@ -84,7 +84,7 @@ Si abres tu Pull Request por primera vez después del cierre, queda con la etiqu
 
 ### Cómo saber que quedó bien
 
-Arriba a la izquierda debe decir **TU-USUARIO / Lab_Clases_CH15**.
+Arriba a la izquierda debe decir **TU-USUARIO / Lab_ClasesJS_CH15**.
 Debajo aparece en letra pequeña: *forked from …*
 
 ---
@@ -100,7 +100,7 @@ En **tu** fork (no en el de la profe), haz clic en el botón verde **Code** y co
 Abre la terminal de VS Code (`Ctrl + ñ` o menú **Terminal → New Terminal**), ubícate en la carpeta donde guardas tus proyectos y escribe esto. Cambia la URL por la que copiaste:
 
 ```bash
-git clone https://github.com/TU-USUARIO/Lab_Clases_CH15.git
+git clone https://github.com/TU-USUARIO/Lab_ClasesJS_CH15.git
 ```
 
 ### Abre la carpeta del proyecto
@@ -108,7 +108,7 @@ git clone https://github.com/TU-USUARIO/Lab_Clases_CH15.git
 Entra a la carpeta que se acaba de crear y ábrela en VS Code:
 
 ```bash
-cd Lab_Clases_CH15
+cd Lab_ClasesJS_CH15
 code .
 ```
 
