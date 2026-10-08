@@ -32,6 +32,19 @@
 
 class Pelicula {
   // Tu código aquí
+  constructor(titulo, duracion){
+    this.titulo = titulo;
+    this.duracion = duracion;
+    this.precioBase = 15000;
+  }
+
+  precioBoleta() {
+    return this.precioBase;
+  }
+
+  ficha() {
+    return `${this.titulo} | ${this.duracion} min | $${this.precioBoleta()}`;
+  }
 }
 
 // No borres esta línea: es la puerta por donde el test usa tu clase

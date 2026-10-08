@@ -36,6 +36,19 @@
 
 class Restaurante {
   // Tu código aquí
+  constructor(nombre, categoria, calificacion){
+    this.nombre = nombre;
+    this.categoria = categoria;
+    this.calificacion = calificacion;
+  }
+
+  describir(){
+    return `${this.nombre} - ${this.categoria} (${this.calificacion} estrellas)`;
+  }
+  
+  estaBienCalificado(){
+    return this.calificacion >= 4.5;
+  }
 }
 
 // No borres esta línea: es la puerta por donde el test usa tu clase

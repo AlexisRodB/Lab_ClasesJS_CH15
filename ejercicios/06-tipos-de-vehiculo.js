@@ -34,15 +34,40 @@
 
 class Vehiculo {
   // Tu código aquí
+  constructor(placa, pasajeros) {
+    this.placa = placa;
+    this.pasajeros = pasajeros;
+  }
+
+  tarifa() {
+    return 2950;
+  }
+
+  reporte() {
+    return `${this.placa} | ${this.pasajeros} pasajeros | Tarifa: $${this.tarifa()}`;
+  }
 }
 
-class Alimentador {
+class Alimentador extends Vehiculo {
   // Tu código aquí
+  tarifa() {
+    return 0;
+  }
+
 }
 
-class BusDual {
+class BusDual extends Vehiculo {
   // Tu código aquí
+  constructor(placa, pasajeros, esElectrico) {
+    super(placa, pasajeros);
+    this.esElectrico = esElectrico;
+  }
+
+  tarifa() {
+    return this.esElectrico ? 2500 : 3200;
+  }
 }
+
 
 // No borres esta línea: es la puerta por donde el test usa tus clases
 module.exports = { Vehiculo, Alimentador, BusDual };
