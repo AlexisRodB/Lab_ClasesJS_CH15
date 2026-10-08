@@ -1,0 +1,15 @@
+{
+  "curso": "🏛️ Taller de clases y herencia",
+  "fechaLimite": "2026-10-08T23:59:00-05:00",
+  "patronTest": "^test\\(",
+  "protegidos": ["tests/", "scripts/", ".github/", "package.json"],
+  "ejercicios": [
+    { "id": "01", "titulo": "Clase Restaurante", "test": "tests/01-clase-restaurante.test.js" },
+    { "id": "02", "titulo": "Clase Pelicula", "test": "tests/02-clase-pelicula.test.js" },
+    { "id": "03", "titulo": "Herencia · PeliculaVIP", "test": "tests/03-pelicula-vip.test.js" },
+    { "id": "04", "titulo": "Clase Usuario", "test": "tests/04-clase-usuario.test.js" },
+    { "id": "05", "titulo": "super.enviar · Comercio", "test": "tests/05-comercio.test.js" },
+    { "id": "06", "titulo": "Tipos de vehículo", "test": "tests/06-tipos-de-vehiculo.test.js" },
+    { "id": "07", "titulo": "Polimorfismo · Flota", "test": "tests/07-flota.test.js" }
+  ]
+}

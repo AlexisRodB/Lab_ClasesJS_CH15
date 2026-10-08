@@ -1,0 +1,44 @@
+name: Calificar ejercicios
+
+on:
+  pull_request:
+    branches: [main]
+
+permissions:
+  contents: read
+
+concurrency:
+  group: calificar-${{ github.event.pull_request.number }}
+  cancel-in-progress: true
+
+jobs:
+  calificar:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - name: Descargar el código del estudiante
+        uses: actions/checkout@v7
+
+      - name: Usar los tests oficiales de main (no los del estudiante)
+        env:
+          RAMA_BASE: ${{ github.base_ref }}
+        run: |
+          git fetch --depth=1 origin "$RAMA_BASE"
+          git checkout FETCH_HEAD -- tests scripts package.json .github
+
+      - name: Instalar Node.js
+        uses: actions/setup-node@v7
+        with:
+          node-version: 24
+
+      - name: Correr tests y calcular nota
+        run: node scripts/calificar.js
+
+      - name: Guardar resultado para publicar la nota
+        if: always()
+        uses: actions/upload-artifact@v7
+        with:
+          name: resultado
+          path: resultado.json
+          if-no-files-found: ignore
+          retention-days: 7

@@ -1,0 +1,9 @@
+{
+  "name": "ejercicios-clases-ch15",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Taller calificable de clases y herencia · Generation Colombia Cohorte 15",
+  "scripts": {
+    "test": "node scripts/calificar.js"
+  }
+}
