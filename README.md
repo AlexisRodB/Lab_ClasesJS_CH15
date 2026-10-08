@@ -59,7 +59,7 @@ No imprimes con `console.log`: los métodos **retornan** y los tests revisan lo 
 
 ### Cuándo cierra
 
-**Jueves 8 de octubre de 2026 a las 11:59 p. m.** (hora de Colombia).
+**Domingo 11 de octubre de 2026 a las 11:59 p. m.** (hora de Colombia).
 
 ### Qué pasa después
 
@@ -247,7 +247,7 @@ El comentario y la etiqueta se actualizan solos.
 
 ### Ojo con la fecha límite
 
-Después del **jueves 8 de octubre a las 11:59 p. m.**, los `git push` ya no cambian tu nota.
+Después del **domingo 11 de octubre a las 11:59 p. m.**, los `git push` ya no cambian tu nota.
 Si tu primera entrega llega tarde, el PR queda con **⏰ Fuera de plazo**.
 
 ---
